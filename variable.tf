@@ -5,7 +5,7 @@ variable  "us-east-1" {
 
 variable  "ami-04a81a99f5ec58529" {
   type = string
-  description  ="ami calling"
+  description  = "ami calling"
 }
 
 variable   "t2.micro" {
