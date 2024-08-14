@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   # Configuration options
-  region = var.region
+  region = "us-east-1"
 }
 
 ##### Try to create one ubuntu server
