@@ -1,4 +1,4 @@
-variable = " {
+variable = "us-east-1" {
   type = string
   description = "region calling"
 }
