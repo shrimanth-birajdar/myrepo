@@ -24,5 +24,5 @@ variable = "tags" {
      Name = "Development-server"
      Enviorment = "staging"
      Owner = "shri"
-    
+    }
 }
