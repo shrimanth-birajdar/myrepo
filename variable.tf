@@ -13,7 +13,7 @@ variable  = "t2.micro" {
   description = "server size calling"
 }
 
-variable "key_name" {
+variable "myfirst.key" {
   type = string
   description = "key calling"
 }
