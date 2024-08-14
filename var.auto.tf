@@ -8,5 +8,5 @@ key_name = "myfirst.key"
 
 tags = {
     Enviorment = "staging"
-    owner = "jarvis"    
+    owner = "pavan"    
   }
