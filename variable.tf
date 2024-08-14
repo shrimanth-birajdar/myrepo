@@ -22,8 +22,8 @@ variable = "myfirst.key" {
 variable = "tags" {
     type = map
     # default = {
-    # Name = "Development-server"
-    # Enviorment = "staging"
-    # Owner = "shri"
+     Name = "Development-server"
+     Enviorment = "staging"
+     Owner = "shri"
     # }
 }
