@@ -1,14 +1,4 @@
-resource "aws_s3_bucket" "terraform-state" {
-  bucket = "terraform-shrimanthbirajdar"
-}
-
-resource "aws_s3_bucket_versioning" "terraform-state" {
-  bucket = aws_s3_bucket.terraform-state.id
-  versioning_configuration {
-    status = "Enabled"
-  }
-}
-
+d
 # State locking using dynamodb
 resource "aws_dynamodb_table" "state_lock_table" {
   name           = "terraform_state_lock"
