@@ -4,7 +4,7 @@ ami = "ami-04a81a99f5ec58529"
 
 instance_type = "t2.micro" 
 
-key_name = "my"
+key_name = "myfirst.key"
 
 tags = {
     Enviorment = "staging"
