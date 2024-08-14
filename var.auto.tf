@@ -1,4 +1,4 @@
-region = "ap-south-1"
+region = ""
 
 ami = "ami-022ce6f32988af5fa"
 
