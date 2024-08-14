@@ -10,11 +10,11 @@ variable = "ami-04a81a99f5ec58529"{
 }
 
 variable = "t2.micro" {
-#   default = "t2.micro"
+
   description = "calling instance type"
 }
 
-variable "key_name" {
+variable = "key_name" {
     # default = "hybrid"
     description = "calling key-pair"
 }
