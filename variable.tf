@@ -9,7 +9,7 @@ variable = "ami-04a81a99f5ec58529"{
     description = "calling ami"
 }
 
-variable "instance_type" {
+variable "t2" {
 #   default = "t2.micro"
   description = "calling instance type"
 }
