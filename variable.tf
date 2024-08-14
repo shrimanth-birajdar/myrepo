@@ -4,8 +4,8 @@ variable = "us-east-1"{
     description = "region calling"
 }
 
-variable = "ami-04a81a99f5ec58529"
-    # default = "ami-0ad21ae1d0696ad58"
+variable = "ami-04a81a99f5ec58529"{
+    
     description = "calling ami"
 }
 
