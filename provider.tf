@@ -7,7 +7,7 @@ terraform {
     backend "s3" {
     bucket = "terraform-shrimanthbirajdar"
     key    = "myfirst.key"
-    region = "us-east"
+    region = "us-east-1"
     dynamodb_table = "terraform_state_lock"
     }
 }
