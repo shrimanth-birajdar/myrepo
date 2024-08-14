@@ -25,8 +25,8 @@ resource "aws_dynamodb_table" "state_lock_table" {
 resource "aws_instance" "server_1" {
     ami = 
     instance_type = "t2.micro"
-    key_name = "myfirst."
-    tags = var.tags
+    key_name = "myfirst.key"
+    tags = "instance1"
 }
 
 
