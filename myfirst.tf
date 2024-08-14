@@ -11,12 +11,6 @@ resource "aws_dynamodb_table" "state_lock_table" {
 }
 
 
-# resource block for server creationami-
-resource "aws_instance" "server_1" {
-    ami = ""
-    instance_type = "t2.micro"
-    key_name = "myfirst.key"
-    tags = "instance1"
 }
 
 
