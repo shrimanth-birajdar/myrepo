@@ -1,4 +1,4 @@
-variable =" {
+variable = " {
   type = string
   description = "region calling"
 }
