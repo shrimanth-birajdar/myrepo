@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform-state" {
-  bucket = "terraform"
+  bucket = "terraform-shrima"
 }
 
 resource "aws_s3_bucket_versioning" "terraform-state" {
