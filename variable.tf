@@ -20,8 +20,7 @@ variable = "myfirst.key" {
 }
 
 variable = "tags" {
-    type = map
-                   {
+    type = map  {
      Name = "Development-server"
      Enviorment = "staging"
      Owner = "shri"
