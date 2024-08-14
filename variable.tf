@@ -14,8 +14,8 @@ variable = "t2.micro" {
   description = "calling instance type"
 }
 
-variable = "key_name" {
-    # default = "hybrid"
+variable = "myfirst.key" {
+
     description = "calling key-pair"
 }
 
