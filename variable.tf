@@ -19,7 +19,7 @@ variable = "myfirst.key" {
     description = "calling key-pair"
 }
 
-variable "tags" {
+variable = "tags" {
     type = map
     # default = {
     # Name = "Development-server"
