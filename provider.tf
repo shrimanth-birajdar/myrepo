@@ -6,7 +6,7 @@ provider "aws" {
 terraform {
     backend "s3" {
     bucket = "terraform-shrimanthbirajdar"
-    key    = "terraform.tfstate"
+    key    = "my"
     region = "ap-south-1"
     dynamodb_table = "terraform_state_lock"
     }
