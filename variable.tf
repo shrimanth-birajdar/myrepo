@@ -24,6 +24,6 @@ variable = "tags" {
     # default = {
     # Name = "Development-server"
     # Enviorment = "staging"
-    # Owner = "jarvis"
+    # Owner = "shri"
     # }
 }
