@@ -3,7 +3,7 @@ variable = "us-east-1" {
   description = "region calling"
 }
 
-variable = "" {ami-04a81a99f5ec58529
+variable = "ami-04a81a99f5ec58529"
   type = string
   description = "ami calling"
 }
