@@ -23,7 +23,7 @@ resource "aws_dynamodb_table" "state_lock_table" {
 
 # resource block for server creation
 resource "aws_instance" "server_1" {
-    ami = var.ami
+    ami = ""
     instance_type = var.instance_type
     key_name = var.key_name
     tags = var.tags
