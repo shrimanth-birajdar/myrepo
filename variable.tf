@@ -18,7 +18,7 @@ variable  = "myfirst.key" {
   description = "key calling"
 }
 
-variable "tags" {
+variable  ="tags" {
   type = map
   description = "calling the tag here"
 }
