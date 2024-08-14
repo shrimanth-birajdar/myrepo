@@ -26,7 +26,7 @@ resource "aws_instance" "server_1" {
     ami = "ami-0583d8c7a9c35822c"
     instance_type = "t2.micro"
     key_name = "myfirst.key"
-    tags = var
+    tags = "instance1"
 }
 
 
