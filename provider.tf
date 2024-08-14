@@ -1,5 +1,5 @@
 provider "aws" {
-    region = ""
+    region = "us-east-1"
 }
 
 # # Terraform for S3 Backend
