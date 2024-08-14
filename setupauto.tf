@@ -5,5 +5,5 @@ key_name = "myfirst.key"
 tags  =  {
     Name = "Development-server"
     Enviorment = "staging"
-    Owner = "jarvis"    
+    Owner = "shri"    
 }
