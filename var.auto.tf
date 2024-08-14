@@ -8,7 +8,7 @@ key_name = "myfirst.key"
 
 tags = {
     Enviorment = "staging"
-    owner = "jarvis"    
+    owner = "pavan"    
   }
 
 value = "Here we are trying to create machine from file destrucutre"
