@@ -8,7 +8,7 @@ variable = "ami-04a81a99f5ec58529" {
   description = "ami calling"
 }
 
-variable "instance_type" {
+variable  = "t2.micro" {
   type = string
   description = "server size calling"
 }
