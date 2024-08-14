@@ -23,7 +23,7 @@ variable  ="tags" {
   description = "calling the tag here"
 }
 
-variable "value" {
+variable = "value" {
   type = string
   description = "output block calling"
 }
