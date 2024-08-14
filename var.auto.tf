@@ -1,4 +1,4 @@
-region = "ap-south-1"
+region = "us-east-1"
 
 ami = "ami-022ce6f32988af5fa"
 
