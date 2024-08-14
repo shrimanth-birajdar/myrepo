@@ -1,5 +1,5 @@
 #variable block calling all values
-variable ="us-east-1"{
+variable = "us-east-1"{
     
     description = "region calling"
 }
