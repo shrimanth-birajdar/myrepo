@@ -3,5 +3,5 @@ provider "aws" {
   
 }
 resource "aws_instance" "myinstance" {
-  ami = 
+  ami = ""
 }
