@@ -8,6 +8,6 @@ resource "aws_instance" "myinstance" {
   key_name = "terrfromkey"
   tags = {
     env = "dev"
-    
+    Name = ""
   }
 }
