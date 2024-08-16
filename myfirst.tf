@@ -10,5 +10,5 @@ resource "aws_instance" "myinstance" {
     env = "dev"
     Name = "instance1"
   }
-  va
+  vpc_security_group_ids = ""
 }
