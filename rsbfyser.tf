@@ -1,3 +1,8 @@
 provider "" {
   
 }
+
+ygmyg 
+resource "" "name" {
+  
+}
