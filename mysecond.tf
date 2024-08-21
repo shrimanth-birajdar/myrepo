@@ -1,5 +1,7 @@
 
-
+terraform {
+  
+}
 provider "aws" {
   
 }
