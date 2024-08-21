@@ -1,4 +1,4 @@
-
+# first upon create s3 bucket 
 terraform {
   backend "s3" {
     bucket = "shrimanthbirajdar-b70"
