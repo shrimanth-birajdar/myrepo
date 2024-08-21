@@ -1,5 +1,5 @@
 # first upon create s3 bucket 
-# this bucket name will create a scripat 
+# this bucket name was create a scrip
 terraform {
   backend "s3" {
     bucket = "shrimanthbirajdar-b70"
