@@ -1,6 +1,7 @@
 
 terraform {
-  backend "" {
+  backend "s3" {
+    bucket = "value"
     
   }
 }
@@ -42,5 +43,4 @@ variable "ami" {
 }
 
 variable "instance_type" {
-  default = "t2.micro"
-}
+  default = "
