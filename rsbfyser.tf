@@ -1,8 +1,0 @@
-provider "" {
-  
-}
-
-ygmyg 
-resource "" "name" {
-  
-}
