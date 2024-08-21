@@ -17,7 +17,7 @@ terraform {
   versioning_configuration {
     status = "Enabled"
   }
-
+  }
 provider "aws" {
     region = var.region
 
