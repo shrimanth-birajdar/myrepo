@@ -41,7 +41,7 @@ variable "region" {
 }
 
 variable "key_name" {
-  default = "terraformkey"
+  default = "pj"
 }
 
 variable "tags" {
