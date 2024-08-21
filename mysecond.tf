@@ -3,7 +3,9 @@ terraform {
     bucket = "shrimanthbirajdar-b60"
     key    = "terraform.tfstate"
     region = "us-east-1"
-  }resource "aws_s3_bucket" "example" {
+  }
+  
+  resource "aws_s3_bucket" "example" {
   bucket = "my-tf-test-bucket"
 
   tags = {
