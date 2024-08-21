@@ -48,4 +48,4 @@ variable "instance_type" {
 }
 
 
-# first upon create 
+# first upon create a s3 bu
