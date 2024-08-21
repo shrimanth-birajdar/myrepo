@@ -1,6 +1,8 @@
 
 terraform {
-  
+  backend "" {
+    
+  }
 }
 provider "aws" {
   
