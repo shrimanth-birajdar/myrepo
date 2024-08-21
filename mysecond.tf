@@ -5,14 +5,14 @@ terraform {
     region = "us-east-1"
   }
   
- resource "aws_s3_bucket" "example" {
-  bucket = "shrimanthbirajdar-b60"
+#  resource "aws_s3_bucket" "example" {
+#   bucket = "shrimanthbirajdar-b60"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
- }
+#   tags = {
+#     Name        = "My bucket"
+#     Environment = "Dev"
+#   }
+#  }
 }   
   resource "aws_s3_bucket_versioning" "versioning_example" {
   bucket = "shrimanthbirajdar-b60"
