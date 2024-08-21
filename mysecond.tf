@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket = "shrimanthbirajdar-b70"
     region = "us-east-1"
-    key = "terraform.tvstate"
+    key = "terraform.tfstate"
   }
 }
 provider "aws" {
