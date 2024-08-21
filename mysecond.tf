@@ -15,7 +15,7 @@ terraform {
  }
 }   
   resource "aws_s3_bucket_versioning" "versioning_example" {
-  bucket = "shrimanthbirajdar"
+  bucket = "shrimanthbirajdar-b60"
   versioning_configuration {
     status = "Enabled"
   }
