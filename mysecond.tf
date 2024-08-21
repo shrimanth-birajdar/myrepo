@@ -5,7 +5,7 @@ terraform {
     region = "us-east-1"
   }
   
-  resource "aws_s3_bucket" "example" {
+ resource "aws_s3_bucket" "example" {
   bucket = "shrimanthbirajdar-b60"
 
   tags = {
