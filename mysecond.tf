@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "shrimanthbirajdar-b70"
-    
+    region = ""
   }
 }
 provider "aws" {
