@@ -23,10 +23,7 @@ provider "aws" {
 #   bucket = aws_s3_bucket.example.bucket
 
 #   versioning_configuration {
-#     status = "Enabled"
-#   }
-# }
-
+#     status = "Enabled
 resource "aws_instance" "myinstance" {
   ami                    = var.ami
   instance_type          = var.instance_type
