@@ -10,14 +10,14 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "shrimanthbirajdar-b60"
+# resource "aws_s3_bucket" "example" {
+#   bucket = "shrimanthbirajdar-b60"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
+#   tags = {
+#     Name        = "My bucket"
+#     Environment = "Dev"
+#   }
+# }
 
 resource "aws_s3_bucket_versioning" "versioning_example" {
   bucket = aws_s3_bucket.example.bucket
