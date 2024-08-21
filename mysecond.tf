@@ -12,7 +12,7 @@ terraform {
     Name        = "My bucket"
     Environment = "Dev"
   }
-}
+
 }
 provider "aws" {
     region = var.region
