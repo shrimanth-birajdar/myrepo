@@ -12,8 +12,7 @@ data "aws_security_group" "my.sg" {
     filter {
       name = "vpc-id"
       values = [  ]
-
-    }
+ }
   
 }
 resource "aws_instance" "myinstance" {
