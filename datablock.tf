@@ -15,6 +15,7 @@ data "aws_security_group" "my.sg" {
  }
  filter {
    name = "group-name"
+   values = 
  }
   
 }
