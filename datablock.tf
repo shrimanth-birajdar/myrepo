@@ -8,13 +8,13 @@ terraform {
 provider "aws" {
    
 }
-data "aws_" "name" {
+data "aws_security_group" "name" {
   
 }
 resource "aws_instance" "myinstance" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = var.key_name
+  key_name               = mvar.key_name
   tags                   = var.tags
   vpc_security_group_ids = var.vpc_security_group_ids
 }
@@ -45,4 +45,4 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-
+
