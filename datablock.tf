@@ -9,6 +9,7 @@ provider "aws" {
    
 }
 data "aws_security_group" "my.sg" {
+    
   
 }
 resource "aws_instance" "myinstance" {
