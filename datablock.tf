@@ -8,13 +8,13 @@ terraform {
 provider "aws" {
    
 }
-data "aws_security_group" "name" {
+data "aws_security_group" "my_security" {
   
 }
 resource "aws_instance" "myinstance" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = mvar.key_name
+  key_name               = var.key_name
   tags                   = var.tags
   vpc_security_group_ids = var.vpc_security_group_ids
 }
