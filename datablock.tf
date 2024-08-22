@@ -8,7 +8,9 @@ terraform {
 provider "aws" {
    
 }
-
+data "aws_" "name" {
+  
+}
 resource "aws_instance" "myinstance" {
   ami                    = var.ami
   instance_type          = var.instance_type
@@ -43,4 +45,4 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-
+
