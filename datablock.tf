@@ -33,10 +33,6 @@ variable "tags" {
   }
 }
 
-variable "vpc_security_group_ids" {
-  type    = list(string)
-  default = ["sg-095d16c928a4862ed"]
-}
 
 variable "ami" {
   default = "ami-04a81a99f5ec58529"
