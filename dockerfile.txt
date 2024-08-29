@@ -15,5 +15,5 @@ WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment
 RUN unzip oxer.zip
 RUN mv oxer-html/*.
-#we are providing container a processs.
+
 CMD ["apachectl", "D", "FOREGROUND"]
