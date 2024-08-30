@@ -1,0 +1,69 @@
+FROM ubuntu:latest
+LABEL purpose="backend"
+WORKDIR /opt
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.zip /opt
+RUN apt update && \
+    apt install unzip openjdk-11-jdk -y && \
+    unzip apache-tomcat-9.0.93.zip
+ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war  apache-tomcat-9.0.93/webapps/
+ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar apache-tomcat-9.0.93/lib/
+COPY context.xml apache-tomcat-9.0.93/conf/
+RUN chmod +rwx /opt/apache-tomcat-9.0.93/bin/*.sh
+
+EXPOSE 8080
+CMD ["/opt/apache-tomcat-9.0.93/bin/catalina.sh", "run"]
+
+
+
+firs folder second file context.xml file 
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<!--  The contents of this file will be loaded for each web application  -->
+<Context>
+<!--  Default set of monitored resources. If one of these changes, the     -->
+<!--  web application will be reloaded.                                    -->
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+<WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+<Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource" maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="admin" password="shri9356615210" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://database-1.chqiokugew51.us-east-1.rds.amazonaws.com:3306/studentapp"/>
+<!--  Uncomment this to disable session persistence across Tomcat restarts  -->
+<!--
+    <Manager pathname="" />
+     -->
+</Context>
+
+second  folder dockerfile fronted 
+FROM ubuntu:latest
+LABEL purpose="Frontend"
+
+RUN apt update && \
+    apt install apache2 -y
+WORKDIR /var/www/html/
+COPY index.html .
+EXPOSE 80
+CMD ["apachectl", "-D" ,"FOREGROUND"]
+
+
+   second folder index.html file { plz create a ip for in this file }
+   
+
+   <h1 style="text-align: center;"><span style="color: #ff0000;">Welcome to Student Application on AWS.</span></h1>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn-images-1.medium.com/max/2000/1*tFl-8wQUENETYLjX5mYWuA.png" alt="" width="1200" height="630" /></p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><a href="http://44.204.187.242:8080/student/"><strong>Enter to Student Application</strong></a></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
