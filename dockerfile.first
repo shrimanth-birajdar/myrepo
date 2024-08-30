@@ -11,8 +11,8 @@ COPY oxer.zip /var/www/html/
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment
-RUN unzip oxer.zip
-RUN mv oxer-html/* .
+RUN munzip oxer.zip
+RUN mv oxer-htl/* .
 EXPOSE 80
 #we are providing container a processs.
 CMD ["apachectl", "-D", "FOREGROUND"]
