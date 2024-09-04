@@ -1,0 +1,48 @@
+# compose dirctory first upon create a docker file 
+
+
+
+FROM ubuntu:latest
+LABEL ubuntu="latest"
+RUN apt update
+RUN apt install nginx -y
+RUN rm -rf /usr/share/nginx/html/index.html
+RUN apt install unzip -y
+COPY oxer.zip /usr/share/nginx/html/
+WORKDIR /usr/share/nginx/html/
+RUN unzip /usr/share/nginx/html/oxer.zip
+RUN mv oxer-html/* . 
+#RUN echo "hello world this is from nginx containers" > /usr/share/nginx/html/index.html
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+ # second file in this folder free template
+ # third was docker-compose.yml file 
+services:  #services syntax comples the creation of cont from img via docfile , assigns network , assigns volumes as well.
+  nginxfrontendconone:
+      build: .
+      ports: 
+          - '81:81'
+      network_mode: bridge
+      container_name: frontnend
+      volumes: 
+         - myapp:/usr/share/nginx/html/
+  nginxfrontendcontwo:
+      build: . 
+      #ports: - "81:81"
+      network_mode: host
+      volumes: 
+        - myapp2:/usr/share/nginx/html/ 
+      container_name: frontnend2
+volumes:   # will create a volume for you.
+      myapp:
+      myapp2:
+networks:
+  myappnetwork:
+
+# and pregent in this foleder all files and run the command 
+# docker build -t compose . 
+# docker compose up
+# docker compose down 
+
